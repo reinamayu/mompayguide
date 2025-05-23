@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pay Guide</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+
+  </style>
+</head>
+<body>
+  <h1 class="fade-in-up"><u>Welcome to the Ministry of Magic's Pay Guide!</u></h1>
+  <div class = "text-border">
+    <h4 class="fade-in-up">Galleons are the pay currency used in the Wizarding World of Harry Potter! Here at the Ministry, you can earn Galleons by completing various tasks.</h4>
+   <h4 class="fade-in-up">2 (TWO) Galleons are equivalent to 1 (ONE) Habbo Credit or 1 (ONE) Galleon is equivalent to 1 (ONE) Habbo Credit if they are used to buy a rank.</h4>
+    <h4 class="fade-in-up">To be able to earn Galleons, you will need to:</h4>
+    <h4 class="fade-in-up">1. Be a member of the Ministry.</h4>
+   <h4 class="fade-in-up">2. Have a verified account on MoM Portal.</h4>
+   <h4 class="fade-in-up">3. Complete tasks and post under the #galleons-vouchers channel.</h4>
+   </div>
+  <p class="fade-in-up">Select a button below to navigate to different sections:</p>
+ 
+<button class="open-btn fade-in-up" onclick="showModal('modal1')">Pay Rules</button>
+<button class="open-btn fade-in-up" onclick="showModal('modalvouch')">How to post vouches</button>
+<button class="open-btn fade-in-up" onclick="showModal('modal2')">Base Tasks</button>
+<button class="open-btn fade-in-up" onclick="showModal('modal3')">Department Tasks</button>
+<button class="open-btn fade-in-up" onclick="showModal('modal4')">How to convert your Galleons</button>
+
+  <!-- Pay Rules -->
+  <div id="modal1" class="modal-overlay">
+    <div class="modal-content">
+      <h2>Pay Rules</h2>
+      <p>1. The station priority rule is to be followed at ALL times. </p>
+      <p>2. Only 5iC+ members (excluding S.P.E.W. members) and Pay Team members are eligible to vouch for another member.</p>
+      <p>3. Galleons are non-transferable to another member.</p>
+      <p>4. Galleons are reset at the end of every month.</p>
+      <p>5. Ministry members are allowed to claim 100 (ONE HUNDRED) Galleons per day. There will be no limit for Galleon conversion to ranks.</p>
+      <p>6. Members can convert their Galleons for a rank purchase at a rate of 1 (ONE) Galleon to 1 (ONE) Habbo Credits. This will be logged as a rank sale.</p>
+      <p>7. Members filling stations for more than 1 (ONE) hour, are to post a vouch at the end of every hour.</p>
+      <p>8. Members are to ensure that their own vouch is correct and reacted by their voucher (if applicable). If there are no reactions from your voucher it will be deemed as invalid.</p>
+      <p>9. Pay can be claimed anytime. If your request has not been processed after 24 hours, you can tag @Pay Team in #Miscellaneous-requests if you have reached the minimum requirements. (Please do not tag if you have not waited 24 hours after you claimed on portal)</p>
+      <p>10. When members leave the Ministry, any unclaimed Galleons in the portal will be removed.</p>
+      <p>11. When a member is bopped/teleported to FTB, or leaves to FTB/AFK seats, their hour resets.</p>
+    </div>
+  </div>
+
+  <!-- How to post vouches -->
+   <div id="modalvouch" class="modal-overlay">
+    <div class="modal-content">
+      <h2>How to post vouches</h2>
+      <p style="text-align: center;">Example of a correct vouch:</p>
+      <img src="imgs/vouch_example.png" alt="Vouch Example" width="600">
+      <p>1. Go to the #galleons-vouchers channel.</p>
+      <p>2. Use this vouch template:</p>
+      <div id = 'vouchTemplate' class = "text-border">
+        <p>Habbo: Your user</p>
+        <p>Rank: Your current rank</p>
+        <p>Completed Task: e.g. 1 hr of FTF</p>
+        <p>Duration:</p>
+        <p>No. of Galleons:</p>
+        <p>Voucher:</p>
+        <p>DC proof: (if applicable)</p>
+      </div>
+      <p style="text-align:center;">Click the button below to copy the vouch template to your clipboard:</p>
+      <div style="display: flex; justify-content: center; margin: 10px 0;">
+        <button onclick="copyVouchTemplate()">Copy Vouch Template</button>
+      </div>
+      <p>3. Include a screenshot of your Habbo filling a station with your device's date and time.</p>
+      <p style="text-align: center;">Choose a button below to find a guide for correct screenshots.</p>
+      <button class="open-btn" onclick="showModal('screenshot1')">Screenshot Guide 1</button>
+      <div id="screenshot1" class="modal-overlay">
+        <div class="modal-content">
+          <button onclick="hideModal('screenshot1')">Back</button>
+          <h3>Screenshot Guide 1</h3>
+          <p>Details about the first screenshot guide go here.</p>
+          <img src="imgs/screenshot_guide1.png" alt="Screenshot Guide 1" width="600">
+        </div>
+    </div>
+    <button class="open-btn" onclick="showModal('screenshot2')">Screenshot Guide 2</button>
+      <div id="screenshot2" class="modal-overlay">
+        <div class="modal-content">
+          <button onclick="hideModal('screenshot2')">Back</button>
+          <h3>Screenshot Guide 2</h3>
+          <p>Details about the first screenshot guide go here.</p>
+          <img src="imgs/screenshot_guide2.png" alt="Screenshot Guide 2" width="600">
+        </div>
+    </div>
+    <button class="open-btn" onclick="showModal('screenshot3')">Screenshot Guide 3</button>
+      <div id="screenshot3" class="modal-overlay">
+        <div class="modal-content">
+          <button onclick="hideModal('screenshot3')">Back</button>
+          <h3>Screenshot Guide 3</h3>
+          <p>Details about the first screenshot guide go here.</p>
+          <img src="imgs/screenshot_guide3.png" alt="Screenshot Guide 3" width="600">
+        </div>
+    </div>
+ </div>
+ </div>
+
+
+  <!-- Base Tasks -->
+  <div id="modal2" class="modal-overlay">
+    <div class="modal-content">
+      <h2>Base Tasks</h2>
+      <h3>FTF/FTS/FTHD/FTTU</h3>
+       <button class="open-btn" onclick="showModal('nestedModal1')">Muggles to 7th Year</button>
+      <div id="nestedModal1" class="modal-overlay">
+        <div class="modal-content">
+          <button onclick="hideModal('nestedModal1')">Back</button>
+          <p>Muggles to 7th Year:</p>
+          <img src="imgs/mto7.png" alt="Muggles to 7th Year" width="600">
+        </div>
+      </div>
+      <button class="open-btn" onclick="showModal('nestedModal2')">Magical Creatures/Dark Enchanters to Head Professors/Voldemort's Army</button>
+      <div id="nestedModal2" class="modal-overlay">
+        <div class="modal-content">
+          <button onclick="hideModal('nestedModal2')">Back</button>
+          <p>Magical Creatures/Dark Enchanters to Head Professors/Voldemort's Army:</p>
+          <img src="imgs/mcdetohpva.png" alt="Magical Creatures to Head Professors" width="600">
+        </div>
+      </div>
+
+      <button class="open-btn" onclick="showModal('nestedModal3')">5iC to 3iC</button>
+      <div id="nestedModal3" class="modal-overlay">
+        <div class="modal-content">
+          <button onclick="hideModal('nestedModal3')">Back</button>
+          <p>5iC to 3iC:</p>
+          <img src="imgs/ic.png" alt="5iC to 3iC" width="600">
+        </div>
+      </div>
+
+      <button class="open-btn" onclick="showModal('nestedModal4')">2iC+</button>
+      <div id="nestedModal4" class="modal-overlay">
+        <div class="modal-content">
+          <button onclick="hideModal('nestedModal4')">Back</button>
+          <p>2iC+:</p>
+          <img src="imgs/2ic.png" alt="2iC+" width="600">
+        </div>
+      </div>
+      <h3>Other Base Tasks - within the same month</h3>
+      <img src="imgs/promote.png" alt="Other Base Tasks" width="600">
+    </div>
+  </div>
+
+  <!-- Dept Tasks -->
+  <div id="modal3" class="modal-overlay">
+    <div class="modal-content">
+      <h2>Department Tasks</h2>
+      <button class="open-btn" onclick="showModal('deptModal1')">Department of Magical Games and Diplomacy</button>
+      <div id="deptModal1" class="modal-overlay">
+        <div class="modal-content">
+          <button onclick="hideModal('deptModal1')">Back</button>
+          <h3>Department of Magical Games and Diplomacy</h3>
+          <p>Details about the Department of Magical Games and Diplomacy go here.</p>
+        </div>
+      </div>
+
+      <button class="open-btn" onclick="showModal('deptModal2')">Department for the Regulation and Control of External Transfers</button>
+      <div id="deptModal2" class="modal-overlay">
+        <div class="modal-content">
+          <button onclick="hideModal('deptModal2')">Back</button>
+          <h3>Department for the Regulation and Control of External Transfers</h3>
+          <p>Details about the Department for the Regulation and Control of External Transfers go here.</p>
+        </div>
+      </div>
+
+      <button class="open-btn" onclick="showModal('deptModal3')">Consortium of Goblinary Finance</button>
+      <div id="deptModal3" class="modal-overlay">
+        <div class="modal-content">
+          <button onclick="hideModal('deptModal3')">Back</button>
+          <h3>Consortium of Goblinary Finance</h3>
+          <p>Details about the Consortium of Goblinary Finance go here.</p>
+        </div>
+      </div>
+
+      <button class="open-btn" onclick="showModal('deptModal4')">Office of Student Affairs</button>
+      <div id="deptModal4" class="modal-overlay">
+        <div class="modal-content">
+          <button onclick="hideModal('deptModal4')">Back</button>
+          <h3>Office of Student Affairs</h3>
+          <p>Details about the Office of Student Affairs go here.</p>
+        </div>
+      </div>
+
+      <button class="open-btn" onclick="showModal('deptModal5')">The Prophet</button>
+      <div id="deptModal5" class="modal-overlay">
+        <div class="modal-content">
+          <button onclick="hideModal('deptModal5')">Back</button>
+          <h3>The Prophet</h3>
+          <p>Details about The Prophet go here.</p>
+        </div>
+      </div>
+
+      <button class="open-btn" onclick="showModal('deptModal6')">Ministry Recognition Council</button>
+      <div id="deptModal6" class="modal-overlay">
+        <div class="modal-content">
+          <button onclick="hideModal('deptModal6')">Back</button>
+          <h3>Ministry Recognition Council</h3>
+          <p>Details about the Ministry Recognition Council go here.</p>
+        </div>
+      </div>
+
+      <button class="open-btn" onclick="showModal('deptModal7')">Magical Law Enforcement</button>
+      <div id="deptModal7" class="modal-overlay">
+        <div class="modal-content">
+          <button onclick="hideModal('deptModal7')">Back</button>
+          <h3>Magical Law Enforcement</h3>
+          <p>Details about Magical Law Enforcement go here.</p>
+        </div>
+      </div>
+
+      <button class="open-btn" onclick="showModal('deptModal8')">Firebolts FC</button>
+      <div id="deptModal8" class="modal-overlay">
+        <div class="modal-content">
+          <button onclick="hideModal('deptModal8')">Back</button>
+          <h3>Firebolts FC</h3>
+          <p>Details about Firebolts FC go here.</p>
+        </div>
+      </div>
+
+      <button class="open-btn" onclick="showModal('deptModal9')">Order of the Phoenix</button>
+      <div id="deptModal9" class="modal-overlay">
+        <div class="modal-content">
+          <button onclick="hideModal('deptModal9')">Back</button>
+          <h3>Order of the Phoenix</h3>
+          <p>Details about OOTP go here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How to convert your Galleons -->
+  <div id="modal4" class="modal-overlay">
+    <div class="modal-content">
+      <h2>How to convert your Galleons</h2>
+      <p>1. Log into <a href="https://portal.momhabbo.com" target="_blank">portal</a></p>
+      <p>2. Go to the Pay/Promote tab:</p>
+      <img src="imgs/paypromote.png" alt="Pay/Promote tab" width="300">
+      <p>3. Input the amount of Galleons to claim (10-100)</p>
+      <p>4. Select "Send pay request"</p>
+      <img src="imgs/claimgalls.png" alt="Claim Galleons" width="600">
+      <p><u>*If you do not see this page on your portal, please tag @Portal Admin in the Discord's #miscellaneous-request channel for access</u></p>
+    </div>
+  </div>
+
+  <script>
+function copyVouchTemplate() {
+  // Get the text content of the vouch template
+  const template = document.getElementById('vouchTemplate').innerText;
+  // Copy to clipboard
+  navigator.clipboard.writeText(template).then(function() {
+    alert('Vouch template copied!');
+  }, function(err) {
+    alert('Failed to copy text');
+  });
+}
+       function showModal(id) {
+      document.getElementById(id).classList.add('show');
+    }
+    function hideModal(id) {
+      document.getElementById(id).classList.remove('show');
+    }
+    // Add event listeners to close modals when clicking outside modal-content
+    [
+      'modal1', 'modalvouch', 'modal2', 'modal3', 'modal4',
+      'nestedModal1', 'nestedModal2', 'nestedModal3', 'nestedModal4',
+      'deptModal1', 'deptModal2', 'deptModal3', 'deptModal4',
+      'deptModal5', 'deptModal6', 'deptModal7', 'deptModal8', 'deptModal9',
+      'screenshot1', 'screenshot2', 'screenshot3'
+    ].forEach(function(id) {
+      document.getElementById(id).addEventListener('click', function(event) {
+        if (event.target === this) {
+          hideModal(id);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
